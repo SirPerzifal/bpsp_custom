@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="construction_spk_portal_rule" model="ir.rule">
+        <field name="name">SPK: portal sees own sub-contractor</field>
+        <field name="model_id" ref="model_construction_spk"/>
+        <field name="domain_force">[('partner_id', 'child_of', user.partner_id.commercial_partner_id.id)]</field>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+    <record id="construction_spk_line_portal_rule" model="ir.rule">
+        <field name="name">SPK line: portal sees own sub-contractor</field>
+        <field name="model_id" ref="model_construction_spk_line"/>
+        <field name="domain_force">[('spk_id.partner_id', 'child_of', user.partner_id.commercial_partner_id.id)]</field>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+    <record id="construction_spk_material_portal_rule" model="ir.rule">
+        <field name="name">SPK material: portal sees own sub-contractor</field>
+        <field name="model_id" ref="model_construction_spk_material"/>
+        <field name="domain_force">[('spk_id.partner_id', 'child_of', user.partner_id.commercial_partner_id.id)]</field>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+</odoo>

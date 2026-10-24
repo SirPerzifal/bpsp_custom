@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="product_category_construction" model="product.category">
+        <field name="name">Konstruksi</field>
+    </record>
+    <record id="product_category_str" model="product.category">
+        <field name="name">Struktur</field>
+        <field name="parent_id" ref="product_category_construction"/>
+    </record>
+    <record id="product_category_arc" model="product.category">
+        <field name="name">Arsitektur</field>
+        <field name="parent_id" ref="product_category_construction"/>
+    </record>
+    <record id="product_category_plb" model="product.category">
+        <field name="name">Plumbing</field>
+        <field name="parent_id" ref="product_category_construction"/>
+    </record>
+    <record id="product_category_elc" model="product.category">
+        <field name="name">Elektrikal</field>
+        <field name="parent_id" ref="product_category_construction"/>
+    </record>
+    <record id="product_category_fin" model="product.category">
+        <field name="name">Finishing</field>
+        <field name="parent_id" ref="product_category_construction"/>
+    </record>
+    <record id="product_category_drw" model="product.category">
+        <field name="name">Pintu &amp; Kusen</field>
+        <field name="parent_id" ref="product_category_construction"/>
+    </record>
+    <record id="product_category_lnd" model="product.category">
+        <field name="name">Landscaping</field>
+        <field name="parent_id" ref="product_category_construction"/>
+    </record>
+    <record id="product_category_oth" model="product.category">
+        <field name="name">Lain-lain</field>
+        <field name="parent_id" ref="product_category_construction"/>
+    </record>
+</odoo>

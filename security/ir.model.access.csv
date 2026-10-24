@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_construction_discipline_user,construction.discipline.user,model_construction_discipline,group_spk_user,1,0,0,0
+access_construction_discipline_manager,construction.discipline.manager,model_construction_discipline,group_spk_manager,1,1,1,1
+access_construction_spk_user,construction.spk.user,model_construction_spk,group_spk_user,1,0,0,0
+access_construction_spk_creator,construction.spk.creator,model_construction_spk,group_spk_creator,1,1,1,0
+access_construction_spk_manager,construction.spk.manager,model_construction_spk,group_spk_manager,1,1,1,1
+access_construction_spk_line_user,construction.spk.line.user,model_construction_spk_line,group_spk_user,1,0,0,0
+access_construction_spk_line_creator,construction.spk.line.creator,model_construction_spk_line,group_spk_creator,1,1,1,1
+access_construction_spk_line_manager,construction.spk.line.manager,model_construction_spk_line,group_spk_manager,1,1,1,1
+access_construction_spk_material_user,construction.spk.material.user,model_construction_spk_material,group_spk_user,1,0,0,0
+access_construction_spk_material_creator,construction.spk.material.creator,model_construction_spk_material,group_spk_creator,1,1,1,1
+access_construction_spk_material_manager,construction.spk.material.manager,model_construction_spk_material,group_spk_manager,1,1,1,1
+access_spk_bom_wizard_creator,spk.bom.wizard.creator,model_spk_bom_wizard,group_spk_creator,1,1,1,1
+access_construction_spk_portal,construction.spk.portal,model_construction_spk,base.group_portal,1,0,0,0
+access_construction_spk_line_portal,construction.spk.line.portal,model_construction_spk_line,base.group_portal,1,0,0,0
+access_construction_spk_material_portal,construction.spk.material.portal,model_construction_spk_material,base.group_portal,1,0,0,0

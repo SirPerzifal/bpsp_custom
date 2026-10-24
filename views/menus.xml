@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_bpsp_root" name="Konstruksi" sequence="25" groups="bpsp_custom.group_spk_user"/>
+    <menuitem id="menu_bpsp_spk" name="SPK" parent="menu_bpsp_root" action="action_construction_spk" sequence="10"/>
+    <menuitem id="menu_bpsp_discipline" name="Jenis Pekerjaan" parent="menu_bpsp_root" action="action_construction_discipline" sequence="20" groups="bpsp_custom.group_spk_manager"/>
+
+    <record id="action_transfer_to_site" model="ir.actions.act_window">
+        <field name="name">Transfer ke Site</field>
+        <field name="res_model">stock.picking</field>
+        <field name="view_mode">form</field>
+        <field name="context" eval="{
+            'default_picking_type_id': ref('stock.picking_type_internal'),
+            'default_location_id': ref('stock.stock_location_stock'),
+            'default_location_dest_id': ref('bpsp_custom.stock_location_site'),
+        }"/>
+    </record>
+    <menuitem id="menu_transfer_to_site" name="Transfer ke Site" parent="stock.menu_stock_transfers"
+        action="action_transfer_to_site" sequence="30" groups="stock.group_stock_user"/>
+</odoo>

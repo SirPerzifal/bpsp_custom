@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="discipline_str" model="construction.discipline">
+        <field name="sequence">10</field>
+        <field name="code">STR</field>
+        <field name="name">Struktur</field>
+        <field name="category_id" ref="product_category_str"/>
+    </record>
+    <record id="discipline_arc" model="construction.discipline">
+        <field name="sequence">20</field>
+        <field name="code">ARC</field>
+        <field name="name">Arsitektur</field>
+        <field name="category_id" ref="product_category_arc"/>
+    </record>
+    <record id="discipline_plb" model="construction.discipline">
+        <field name="sequence">30</field>
+        <field name="code">PLB</field>
+        <field name="name">Plumbing</field>
+        <field name="category_id" ref="product_category_plb"/>
+    </record>
+    <record id="discipline_elc" model="construction.discipline">
+        <field name="sequence">40</field>
+        <field name="code">ELC</field>
+        <field name="name">Elektrikal</field>
+        <field name="category_id" ref="product_category_elc"/>
+    </record>
+    <record id="discipline_fin" model="construction.discipline">
+        <field name="sequence">50</field>
+        <field name="code">FIN</field>
+        <field name="name">Finishing</field>
+        <field name="category_id" ref="product_category_fin"/>
+    </record>
+    <record id="discipline_drw" model="construction.discipline">
+        <field name="sequence">60</field>
+        <field name="code">DRW</field>
+        <field name="name">Pintu &amp; Kusen</field>
+        <field name="category_id" ref="product_category_drw"/>
+    </record>
+    <record id="discipline_lnd" model="construction.discipline">
+        <field name="sequence">70</field>
+        <field name="code">LND</field>
+        <field name="name">Landscaping</field>
+        <field name="category_id" ref="product_category_lnd"/>
+    </record>
+    <record id="discipline_oth" model="construction.discipline">
+        <field name="sequence">80</field>
+        <field name="code">OTH</field>
+        <field name="name">Lain-lain</field>
+        <field name="category_id" ref="product_category_oth"/>
+    </record>
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_task_form_bpsp_spk" model="ir.ui.view">
+        <field name="name">project.task.form.bpsp.spk</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//span[@id='end_button_box']" position="before">
+                <button name="action_view_spk" type="object" class="oe_stat_button" icon="fa-file-text-o" groups="bpsp_custom.group_spk_user">
+                    <field name="spk_count" widget="statinfo" string="SPK"/>
+                </button>
+            </xpath>
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="bpsp_block"/>
+                <field name="bpsp_unit"/>
+                <field name="bpsp_unit_type"/>
+                <field name="spk_progress" widget="progressbar"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_project_form_bpsp_code" model="ir.ui.view">
+        <field name="name">project.project.form.bpsp.code</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='label_tasks']" position="after">
+                <field name="bpsp_code" placeholder="GI"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
