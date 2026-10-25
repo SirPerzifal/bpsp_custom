@@ -42,6 +42,7 @@ Custom work is limited to the SPK (Surat Perintah Kerja) layer on top.
         'views/construction_spk_views.xml',
         'views/project_task_views.xml',
         'views/menus.xml',
+        'views/favicon_templates.xml',
     ],
     'installable': True,
     'application': False,

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="bpsp_web_favicon" inherit_id="web.layout" name="BPSP favicon">
+        <xpath expr="//link[@rel='shortcut icon']" position="replace">
+            <link rel="icon" type="image/png" sizes="32x32" href="/bpsp_custom/static/src/img/favicon/favicon-32x32.png"/>
+            <link rel="icon" type="image/png" sizes="16x16" href="/bpsp_custom/static/src/img/favicon/favicon-16x16.png"/>
+            <link rel="shortcut icon" type="image/x-icon" href="/bpsp_custom/static/src/img/favicon/favicon.ico"/>
+            <link rel="apple-touch-icon" sizes="180x180" href="/bpsp_custom/static/src/img/favicon/apple-touch-icon.png"/>
+        </xpath>
+    </template>
+</odoo>
